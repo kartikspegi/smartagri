@@ -5,18 +5,36 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "name1",
+  "booking_date",
+  "select_crop"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "select_crop",
+   "fieldtype": "Autocomplete",
+   "label": "Select Crop",
+   "options": "Banana\nPapaya\nBanboo",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-15 15:12:22.648854",
+ "modified": "2024-11-05 13:38:21.215711",
  "modified_by": "Administrator",
  "module": "Smartagri",
  "name": "Bookings",
